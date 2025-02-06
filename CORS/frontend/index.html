@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Test</title>
+</head>
+
+<body>
+    <h1>Frontend Making Request to FastAPI</h1>
+    <button id="fetchMessage">Fetch Message</button>
+    <p id="response"></p>
+
+    <script>
+        document.getElementById("fetchMessage").addEventListener("click", async function () {
+            const response = await fetch("http://localhost:8000/message");
+            const data = await response.json();
+            document.getElementById("response").textContent = data.message;
+        });
+    </script>
+</body>
+
+</html>

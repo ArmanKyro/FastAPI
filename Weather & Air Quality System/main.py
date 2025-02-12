@@ -45,7 +45,7 @@ def fetch_air_quality(city: str, state: str, country: str):
 
 ############################################### COMBINED API CALL ##################################################
 
-@app.get("/combined-weather-airquality")
+@app.get("/weather-airquality")
 def get_combined_data(city: str, state: str, country: str):
     """API to fetch weather and air quality in a single call."""
     weather_data = fetch_weather(city)

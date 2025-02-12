@@ -3,8 +3,8 @@
 
 # app = FastAPI()
 
-# OPENWEATHER_API_KEY = "f6bdb85a6087a5ee3dc840e6db5c3f40"
-# IQAIR_API_KEY = "8a2b633c-4e17-40a7-8a7e-654a72edd49c"
+# OPENWEATHER_API_KEY = ""
+# IQAIR_API_KEY = ""
 
 # ############################################### GET-COORDINATES ######################################################
 
